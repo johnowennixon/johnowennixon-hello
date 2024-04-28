@@ -1,0 +1,78 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "ignore": [],
+    "attributePosition": "auto",
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 120
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "bracketSpacing": false,
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "semicolons": "asNeeded",
+      "trailingComma": "all"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "complexity": {
+        "useArrowFunction": "error",
+        "useLiteralKeys": "off",
+        "useRegexLiterals": "off"
+      },
+      "correctness": {
+        "noUnusedImports": "error",
+        "noUnusedVariables": "error",
+        "noVoidTypeReturn": "off"
+      },
+      "performance": {
+        "noDelete": "off"
+      },
+      "style": {
+        "noNamespace": "error",
+        "noNegationElse": "error",
+        "noParameterAssign": "off",
+        "noParameterProperties": "error",
+        "noShoutyConstants": "error",
+        "useBlockStatements": "error",
+        "useCollapsedElseIf": "error",
+        "useConsistentArrayType": {
+          "level": "error",
+          "options": {
+            "syntax": "generic"
+          }
+        },
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "requireAscii": true,
+            "filenameCases": ["snake_case"]
+          }
+        },
+        "useForOf": "error",
+        "useNamingConvention": "off",
+        "useNodeAssertStrict": "error",
+        "useShorthandAssign": "error",
+        "useSingleCaseStatement": "error",
+        "useTemplate": "off"
+      },
+      "suspicious": {
+        "noEmptyBlockStatements": "error",
+        "useAwait": "off"
+      }
+    }
+  },
+  "organizeImports": {
+    "enabled": true
+  }
+}

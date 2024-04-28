@@ -1,0 +1,48 @@
+{
+  "name": "@johnowennixon/hello",
+  "version": "0.0.0",
+  "description": "Hello from John Owen Nixon",
+  "license": "0BSD",
+  "author": {
+    "email": "john.owen.nixon@gmail.com",
+    "name": "John Owen Nixon",
+    "url": "https://johnowennixon.com/"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johnowennixon/johnowennixon-hello.git"
+  },
+  "packageManager": "pnpm@9.0.6",
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module",
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "bin": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "fix": "biome check src --apply",
+    "lint": "biome check src",
+    "start": "node ./dist/index.js",
+    "test": "true"
+  },
+  "dependencies": {
+    "ansis": "3.2.0",
+    "ink": "4.4.1",
+    "ink-select-input": "5.0.0",
+    "open": "10.1.0",
+    "react": "18.3.1",
+    "terminal-image": "2.0.0"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.7.1",
+    "@types/react": "18.3.1",
+    "typescript": "5.4.5"
+  }
+}

@@ -1,0 +1,5 @@
+.editorconfig
+.node-version
+.nvmrc
+biome.json
+tsconfig.json
