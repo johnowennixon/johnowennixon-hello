@@ -75,7 +75,11 @@ const items = localItems.map((item) => ({...item, value: undefined}))
 const ui = () => (
   <Box flexDirection="column">
     <Box marginBottom={1}>
-      <Text>An early adopter of DevOps, I am keen to help companies automate their cloud deployments.</Text>
+      <Text>
+        Avocados, Boxes, Colours, Dilbert, Escher, Fusion, Genomics, Hedgehogs, Illumination, Jesus, Knots, Linux,
+        Mackintosh, Nutrition, Oxford, Puzzles, Quotes, Random, Steampunk, Typography, Unolingo, Voting, Wood, xkcd,
+        Yum, Zimbabwe.
+      </Text>
     </Box>
     <SelectInput items={items} onSelect={handleSelect} />
   </Box>
@@ -84,7 +88,7 @@ const ui = () => (
 const {rows, columns} = process.stdout
 const image = await terminalImage.file(getAssetPath("John_Owen_Nixon_pond_300x300.jpg"), {
   width: columns,
-  height: rows - localItems.length - 4,
+  height: rows - localItems.length - 5,
 })
 console.log(image)
 
