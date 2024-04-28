@@ -24,7 +24,9 @@
     "dist",
     "assets"
   ],
-  "bin": "./dist/index.js",
+  "bin": {
+    "hello": "dist/index.js"
+  },
   "scripts": {
     "build": "tsc",
     "fix": "biome check src --apply",

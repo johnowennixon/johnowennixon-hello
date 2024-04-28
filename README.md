@@ -1,6 +1,6 @@
-# johnowennixon-cli
+## About
 
-> Hello from [John Owen Nixon](https://johnowennixon.com)
+Outputs to console a page of information about [John Owen Nixon](https://johnowennixon.com).
 
 ## Usage
 
